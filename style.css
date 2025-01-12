@@ -15,6 +15,12 @@ html, body{
     height: 100%;
 }
 
+#main{
+    /* background: #000; */
+    position: relative;
+    z-index: 10;
+}
+
 #page1{
     min-height: 100vh;
     width: 100%;
@@ -188,7 +194,7 @@ nav{
 #moving-text h1{
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 5vw;
+    font-size: 9vw;
     /* font-weight: 900; */
     display: inline-block;
 }
@@ -221,16 +227,16 @@ nav{
 }
 
 #page2-bottom h1{
-    font-size: 3.5vw;
-    width: 50%;
-    font-weight: bolder;
-    line-height: 4vw;
+    font-size: 4.5vw;
+    width: 60%;
+    line-height: 4.5vw;
     position: relative;
     z-index: 99;
 }
 
 #bottom-part2{
     width: 20%;
+    margin-top: 20%;
 }
 
 #bottom-part2 img{
@@ -268,7 +274,131 @@ nav{
 
 
 #page3{
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    background: #EFEAE3;
+    padding: 4vw 0;
+}
+
+.elem{
+    position: relative;
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #b8b4b4;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+
+.elem h2{
+    font-size: 2.5vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease-in-out 0.2s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+#fixed-image{
+    height: 30vw;
+    width: 24vw;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+/* #elem-container{
+} */
+
+#page4{
+    height: 60vh;
     width: 100%;
     background: #EFEAE3;
 }
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    /* background: #EFEAE3; */
+}
+
+#footer{
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1vw 3vw;
+}
+
+#footer h1{
+    font-size: 22vw;
+    text-align: center;
+}
+
+#footer-div{
+    height: 20vh;
+    width: 100%;
+}
+
+#footer-bottom{
+    border-top: 1px solid #dadada;
+    height: 10vh;
+    width: 100%;
+}
+
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide {
+      width: 60%;
+    }
+
+    .swiper-slide:nth-child(2n) {
+      width: 40%;
+    }
+
+    .swiper-slide:nth-child(3n) {
+      width: 20%;
+    }
