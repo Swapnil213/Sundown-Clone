@@ -12,6 +12,13 @@
 </head>
 
 <body>
+    <!-- -------------- loader ---------------- -->
+    <div id="loader">
+        <h1>experiences </h1>
+        <h1>environments </h1>
+        <h1>content </h1>
+    </div>
+
     <!-- -------------- projects animation image ---------------- -->
     <div id="fixed-image">
     </div>
@@ -26,6 +33,7 @@
                     <h4><a href="#">Studio</a></h4>
                     <h4><a href="#">Contact</a></h4>
                 </div>
+                <h3>Menu</h3>
             </nav>
             <div id="center">
                 <div id="left">
@@ -144,16 +152,20 @@
                     <div class="swiper-slide">Slide 5</div>
                     <div class="swiper-slide">Slide 6</div>
                     <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
 
         <!-- -------------- Page 5 ---------------- -->
         <div id="page5">
-            
+
+        </div>
+
+        <!-- -------------- hamburger menu ---------------- -->
+        <div id="ham">
+            <div id="ham-div1">
+
+            </div>
         </div>
     </div>
 
@@ -166,6 +178,20 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script>
+        // Swiper //
+
+        function swiperAnimation() {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 100
+            });
+        }
+
+        swiperAnimation();
+    </script>
 </body>
 
 </html>
